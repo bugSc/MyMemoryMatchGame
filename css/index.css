@@ -1,0 +1,304 @@
+#wrap{
+	position: relative;
+	transform: perspective(1000);  
+    -moz-transform: perspective(1000);  
+    -o-transform: perspective(1000);  
+    -webkit-transform: perspective(1000);  
+}
+#wrap>.gameRule{
+	width:85%;
+	height: 90%;
+	position: absolute;
+	left: 0;top:0;right: 0;bottom: 0;
+	margin: auto;
+	border-radius: 2%;
+	overflow: hidden;
+	z-index: 100;
+	display: none;
+}
+#wrap>.gameRule>img:first-child{
+	width: 100%;
+	height: 100%;
+}
+#wrap>.gameRule>img:last-child{
+	width: 10%;
+	height: 10%;
+	position: absolute;
+	top: 0;
+	right: 3%;
+}
+
+/*翻翻就知道*/
+.index2{
+	width: 100%;
+	height: 100%;
+	/*display: none;*/
+}
+.index2>div:first-child{
+	width: 100%;
+	height: 100%;
+}
+.index2>div:first-child>img{
+	display:block;
+	width: 100%;
+	height: 100%;
+}
+.index2>div:nth-child(2){
+	width: 100%;
+	height: 6%;
+	position:absolute; 
+	top: 80%;
+}
+.index2>div:nth-child(2)>img{
+	display:block;
+	width: 33%;
+	height: 100%;
+	position: absolute;
+	left: 0;right: 0;top: 0;bottom: 0;
+	margin:0 auto;
+}
+.index2>span{
+	position: absolute;
+	top: 87%;
+	display: block;
+	width: 100%;
+	color: gray;
+	text-align: center;
+	margin-top: 1%;
+}
+
+/*第一个界面*/
+.firstIndex{
+	width: 100%;
+	height: 0;
+	background-color: #DCDCDD;
+	position: absolute;
+	/*display: none;*/
+	left: 0;top: 0;
+	/*background-image: url(../images/firstbg.jpg);*/
+	background-size: 100% 100%;
+}
+.firstIndex>img{
+	width: 50%;
+	height:30%;
+	position:absolute;
+	left: 0;right: 0;top: 0;bottom:0;
+	margin: auto;
+}
+/*第一关*/
+.first{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/firstbg.jpg);
+	background-size:100% 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	text-align: center;
+	display: none;
+}
+.first>.time{
+	width: 85%;
+	height: 7%;
+	background-image: url(../images/time.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 5%;left: 0;right: 0;bottom: 0;
+}
+.first>.time div{
+	width: 85%;
+    height: 55%;
+    /* background-color: red; */
+    /*border: 1px solid black;*/
+    border-radius: 50px;
+    position: absolute;
+    left: 8%;
+    overflow: hidden;
+    top:1%;
+}
+.first>.time div img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;top: 0;
+}
+
+.first>.time span{
+	position: absolute;
+    right: 19%;
+    top: 56%;
+    z-index: 1000;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+.first>.time p:first-of-type{
+	position: absolute;
+    top: 13%;
+    left: 2%;
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 12px;
+}
+.first>.time p:last-of-type{
+	position: absolute;
+    top: 13%;
+    right: 2%;
+    z-index: 1000;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.first>.raffle{
+	position: absolute; 
+	bottom: 5%;
+	width: 100%;
+}
+.first>.raffle img{
+	width: 100%;
+}
+.first>.raffle span{
+	position: absolute;
+	color: white;
+	display: inline-block;
+	width: 100%;
+	top: 20%;
+	left: 0;
+	font-size: 12px;
+}
+/*中间的牌牌*/
+.first>.paipai{
+	width: 75%;
+    height: 60%;
+    /*border: 1px solid black;*/
+    position: absolute;
+    left: 0;
+    top: -8%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.first>.paipai>li{
+	display: inline-block;
+	position: relative;
+	width: 47%;
+	height: 32%;
+	/*border: 1px solid red;*/
+}
+.first>.paipai img{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	margin-top: 1%;
+	/*backface-visibility:hidden;*/
+	-webkit-backface-visibility:hidden;
+	transition:0.5s;
+	transition:0.5s;
+}
+.paipai .one{
+	z-index: 50;
+	transform:rotateY(0deg);
+	transform:rotateY(0deg);
+}
+.paipai .two{
+	z-index: 50;
+	transform:rotateY(180deg);
+}
+/*第一关挑战失败/成功*/
+.loseFirst{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top:0 ;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 100;
+	display: none;
+}
+.loseFirst img{
+	width: 55%;
+	height: 30%;
+	position: absolute;
+	top: 0;bottom: 0;left: 0;right: 0;
+	margin: auto;
+}
+/*第二三关li*/
+
+.paipai>#two,.paipai>#three{
+	display: none;
+}
+
+/*通关*/
+.pass{
+	background-image: url(../images/pass.png);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;top: 0;
+	display: none;
+	z-index: 1000;
+}
+.pass span{
+	width: 17%;
+    height: 10%;
+    border-radius: 100%;
+    color: white;
+    font-size: 32px;
+    position: absolute;
+    top: 27%;
+    left: 41%;
+    text-align: center;
+}
+/*分享*/
+.pass p,.pass a{
+	width: 30%;
+    height: 6%;
+    /*background-color: red;*/
+    position: absolute;
+}
+.pass p{
+    left: 57%;
+    top: 51%;
+}
+/*再玩一次*/
+.pass a{
+    left: 35%;
+    top: 62%;
+}
+
+/*遮罩层*/
+.mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-image: url(../images/levelsBg.jpg);
+	/*background-color: black;*/
+	background-size: 100% 100%;
+	z-index: 1000;
+}
+.mask p{
+	position: absolute;left: 0;right: 0;bottom: 0;top: 0;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	/*border: 1px solid red;*/
+	font-size: 60px;
+	color: white;
+	font-weight: bold;
+}
+
+
+
+

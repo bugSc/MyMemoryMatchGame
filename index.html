@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		html,body{
+			height: 100%;
+			background-color: black;
+			overflow: hidden;
+		}
+		#wrap{
+			height: 100%;
+			width: 100%;
+			overflow: hidden;
+		}
+
+	</style>
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div id="wrap">
+		<!-- 规则 -->
+		<div class="gameRule">
+			<img src="images/gameRule.png" alt="">
+			<img src="images/cha.png" alt="">
+		</div>
+		<!-- 翻翻看就知道 -->
+		<div class="index2">
+			<div><img src="images/img/bg.png" alt=""></div>
+			<div><img src="images/start.png" alt=""></div>
+			<span>&gt&gt活动规则&lt&lt</span>
+		</div>
+		<!-- 第一关界面 -->
+		<div class="firstIndex"><img src="images/first.png" alt=""></div>
+		<!-- 第一关 -->
+		<div class="first">
+			<!--时间  -->
+			<div class="time">
+				<div>
+					<img src="images/countdown.png" alt="">
+				</div>
+				<span>100%</span>
+				<p>0</p>
+				<p>40</p>
+			</div>
+			<!-- 中间的牌牌 -->
+			<ul class="paipai">
+				<li id="one" class="oneone">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="one" class="oneone">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="one" class="oneone">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="one" class="oneone">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="one" class="oneone">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="one" class="oneone">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="two">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="two">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="two">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="two">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="two">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="two">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="three">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="three">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="three">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="three">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="three">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="three">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="three">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				<li id="three">
+					<img class="one" src="images/goretex.png" alt="">
+					<img class="two" src="images/goretex1.png" alt="">
+				</li>
+				
+			</ul>
+			<!-- 下面抽奖次数-->
+			<div class="raffle"><img src="images/choujiang.png" alt=""><span>你有的抽奖次数：3次</span></div>
+			<!-- 挑战失败 -->
+			<div class="loseFirst">
+				<img src="images/lose.png" alt="">
+			</div>
+		</div>
+		<!-- 通关 -->
+		<div class="pass">
+			<span>60</span>
+			<p></p>
+			<a href=""></a>
+		</div>
+
+		<!-- 遮罩层 -->
+		<div class="mask">
+			<p>0%</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<html>
