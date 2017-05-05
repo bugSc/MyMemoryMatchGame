@@ -282,7 +282,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	background-image: url(../images/levelsBg.jpg);
+	background-image: url(../images/mask.png);
 	/*background-color: black;*/
 	background-size: 100% 100%;
 	z-index: 1000;
