@@ -270,10 +270,6 @@ function checkFn(thisIndex){
 // 	grade="one";
 // 	loseClickFn();
 // })
-
-
-
-
 // 随机牌牌
 function randomFn(max){
 	var random=[];
@@ -290,9 +286,15 @@ function randomFn(max){
 	console.log(random);
 }
 
+// 分享功能
+var $passP=$(".pass>p");
 
-// }
+$passP.on("click",function(){
+	window.location.href="share.html";
+});
+$(document).on("click",function(){
 
+})
 
 
 
